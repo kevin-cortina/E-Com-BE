@@ -3,13 +3,13 @@
   # E-Com-BE
   
   ## Description
-  This application helps organize a teams information by creating a display easily accessible by members of the team. User can add departments, add roles, and add/ update employees. 
+  This is a developed back end for an online retail store to help them use the latest technology. We use MySql to keep the information. 
   
   ## Video Link
-  https://drive.google.com/file/d/1UcoQ856XkkTCEjASjjmR0q5IOLw6_nQq/view?usp=sharing
+  https://drive.google.com/drive/folders/1xcvxdur2wS8mSKBWcQ4gHmvkjHFZCXd0?usp=sharing
   
   ## Screenshot of application
-   ![Screenshot of command-line](./assets/pictures/commandline.png)
+   ![Screenshot of command-line](./assets/pictures/sc-ofapp.png)
   
   ## Table of Contents
   - [Installation](#installation)
@@ -23,10 +23,12 @@
  
   ## Installation
   - npm -i inquirer,  to install inquirer. 
+  - npm i dotenv, to install dotenv
   - mysql -u root -p, to set up mysql
   - source schema.sql, to set schema
-  - source seeds.sql, to input base data
-  - node index.js, to run the application.
+  - exit, to exit mysql database
+  - npm run seed, to input base data
+  - node server.js, to run the application.
   
   ## Contributing
   Feel free to add or change any code.
@@ -37,10 +39,10 @@
   
 
   ## Features
-  Inquirer, Node.js, Express.js
+  Inquirer, Sequalize, MySQL: database, Express.js, dotenv.
   
   ## Tests
-  node run tests, to run tests.
+  N/A
  
   
   ## Questions
