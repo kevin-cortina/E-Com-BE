@@ -22,13 +22,13 @@
   - [Questions](#questions)
  
   ## Installation
-  `npm -i inquirer`,  to install inquirer. 
-   `npm i dotenv`, to install dotenv
-  `mysql -u root -p`, to set up mysql
-  `source schema.sql`, to set schema
-  `exit`, to exit mysql database
-  `npm run seed`, to input base data
-  `node server.js`, to run the application.
+  `npm -i inquirer`,  to install inquirer.  
+  `npm i dotenv`, to install dotenv  
+  `mysql -u root -p`, to set up mysql  
+  `source schema.sql`, to set schema  
+  `exit`, to exit mysql database  
+  `npm run seed`, to input base data  
+  `node server.js`, to run the application  
   
   ## Contributing
   Feel free to add or change any code.
