@@ -17,7 +17,6 @@ Product.init(
     },
     product_name: {
       type: DataTypes.STRING,
-      // prevents null values
       allowNull: false,
   },
     price: {
