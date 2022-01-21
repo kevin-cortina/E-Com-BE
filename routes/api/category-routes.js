@@ -24,13 +24,6 @@ router.get('/:id', async (req, res) => {
       include: [{ model: Product }],
       attributes: {
         include: [
-          // [
-          //   // Use plain SQL to add up the total mileage
-          //   sequelize.literal(
-          //     '(SELECT SUM(mileage) FROM car WHERE car.driver_id = driver.id)'
-          //   ),
-          //   'totalMileage',
-          // ],
         ],
       },
 });
@@ -45,17 +38,17 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-router.post('/', (req, res) => {
+router.post('/', async (req, res) => {
   // create a new category
   Category.create({
-    id: req.body.id,
+    id: req.params.id,
     category_name: req.body.category_name,
   })
     .then((newCategory) => {
       // Send the newly created row as a JSON object
       res.json(newCategory);
     })
-    .catch((err) => {
+  .catch((err) => {
       res.json(err);
     });
 });
